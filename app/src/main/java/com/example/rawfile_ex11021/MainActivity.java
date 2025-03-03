@@ -18,6 +18,10 @@ import java.io.InputStreamReader;
 
 public class MainActivity extends AppCompatActivity
 {
+    /**
+     * this is the main activity of the rawFile app project
+     * @author ofek Dafna
+     */
     private final String FILENAME = "raw.txt";
 
     TextView showingText;
@@ -36,14 +40,13 @@ public class MainActivity extends AppCompatActivity
         rawFIleBtn = findViewById(R.id.rawFileButton);
         textBtn = findViewById(R.id.textButton);
         credits = findViewById(R.id.credits);
-        //----------------------------------------------------------------
-
-
-
-
 
     }
 
+    /**
+     * once the button is clicked, the data saved in the raw file will be shown on the screen
+     * @param view
+     */
     public void rawFileButton(View view)
     {
         try
@@ -75,12 +78,21 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
+    /**
+     * once the button is clicked, the data that the user had entered will be shown on the screen
+     * @param view
+     */
     public void textButton(View view)
     {
         showingText.setText(inputText.getText().toString());
     }
 
+    /**
+     * once the button is clicked, the user will be sent to the credits screen
+     * @param view
+     */
     public void credits(View view)
     {
+
     }
 }
